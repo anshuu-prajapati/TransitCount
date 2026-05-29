@@ -1,0 +1,11 @@
+torch>=2.3.0
+torchvision
+ultralytics==8.3.0
+supervision==0.21.0
+boxmot==10.0.84
+opencv-python-headless
+gdown
+lapx
+scipy
+numpy==1.26.4
+matplotlib
