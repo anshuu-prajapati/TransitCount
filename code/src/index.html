@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Rushikesh</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background: linear-gradient(to bottom, #4567b7, #6495ed);
+            color: #ffffff;
+        }
+        
+        header {
+            font-size: 48px;
+            line-height: 1.2;
+            font-weight: bold;
+            padding: 20px;
+            animation: fadeIn 1.5s 0.5s forwards;
+            opacity: 0;
+        }
+        
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+        }
+        
+        .cta-button {
+            width: 200px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: #4CAF50;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            line-height: 1.2;
+            font-weight: bold;
+            color: #333333;
+            border: none;
+            cursor: pointer;
+            animation: slideIn 1.2s 1.5s forwards;
+            transform: translateX(100%);
+        }
+        
+        .cta-button:hover {
+            animation: scaleUp 0.5s forwards;
+            transform: scale(1.1);
+        }
+        
+        footer {
+            font-size: 14px;
+            line-height: 1.5;
+            padding: 20px;
+            animation: fadeIn 1.5s 0.5s forwards;
+            opacity: 0;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes scaleUp {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.1);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                font-size: 36px;
+            }
+            .cta-button {
+                width: 150px;
+                height: 40px;
+                font-size: 16px;
+            }
+            footer {
+                font-size: 12px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            header {
+                font-size: 24px;
+            }
+            .cta-button {
+                width: 100px;
+                height: 30px;
+                font-size: 14px;
+            }
+            footer {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Hello Rushikesh</header>
+    <main>
+        <button class="cta-button">Learn More</button>
+    </main>
+    <footer>&copy; 2023 <a href="#" style="color: #ffffff; text-decoration: none;">Developer's Website</a></footer>
+    <script>
+        // Add event listener to CTA button
+        document.querySelector('.cta-button').addEventListener('click', () => {
+            alert('CTA button clicked!');
+        });
+    </script>
+</body>
+</html>
